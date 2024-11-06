@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album 6</title>
+</head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Lato, sans-serif;
+	margin: 0;
+	padding: 1rem;
+	min-height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background: rgba(20, 20, 20, 1);
+}
+
+img {
+	width: 100%;
+	display: block;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	transition: transform 1000ms;
+	border-radius: 50%;
+  border: 10px solid whitesmoke;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	max-width: 100%;
+	width: 70rem;
+}
+
+figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+figure::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 200%;
+	height: 200%;
+	background: rgba(0, 0, 0, 0.5);
+	transform-origin: center;
+	opacity: 0;
+	transform: scale(2);
+	transition: opacity 3000ms;
+}
+
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	text-align: center;
+	padding: 1rem;
+	color: white;
+	font-size: 1.2rem;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 600ms, transform 600ms;
+}
+
+a:is(:hover, :focus) figure::after {
+	opacity: 1;
+}
+
+a:is(:hover, :focus) figcaption {
+	opacity: 1;
+	transition: opacity 600ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	figcaption {
+		transform: translate3d(0, 2rem, 0);
+	}
+	
+	figure::after {
+		border-radius: 50%;
+		opacity: 1;
+		transform: scale(0);
+		transition: transform 900ms;
+	}
+	
+	a:is(:hover, :focus) figure::after {
+		transform: scale(2.5);
+	}
+
+	a:is(:hover, :focus) figcaption {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+		transition: opacity 600ms 400ms, transform 600ms 400ms;
+	}
+
+	a:is(:hover, :focus) img {
+		transform: scale(1.2);
+    border-radius: 20px;
+	}
+}
+h1 {
+    margin-bottom: 100px;
+    text-align: center;
+    color: aqua;
+}
+footer{
+    float: left;
+    color: aqua;
+}
+
+</style>
+<body>
+    <h1>PHOTO STUDIO</h1><br>
+    <ul>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='b.jpg'>
+                    <figcaption>❤️Banyak Hal Yang tak Terungkap Namun Hanya Bisa Dirasakan&#x1F631;</figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='a.jpg'>
+                    <figcaption>❤️Seandainya aku tak Bertemu dengan Kamu Mungkin Semua ini takan terjadi&#128522;</figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='d.jpg'>
+                    <figcaption>❤️Namun sebenarnya aku merasa bahwa aku tak pantas jika berkaca dari segi apapun  &#x1F628;</figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='e.jpg'>
+                    <figcaption>❤️ Tapi terlepas dari hal itu Aku bertrimakasi terhadap kamu karena mau menerimaku yang seperti ini&#128524;</figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='f.jpg'>
+                    <figcaption>❤️Hal yang terjadi itu adalah semua kesenangan yang tercipta saat aku bersamamu &#x1F60A;</figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='g.jpg'>
+                    <figcaption>❤️Semua perhatian kamu kasih sayang serta semua hal yang tak terduga dan terjadi itukah yang menjadi bumbu pelengkap  &#x1F60B;</figcaption>
+                </figure>
+            </a>
+        </li>
+		<li>
+            <a href="">
+                <figure>
+                    <img src='h.jpg'>
+                    <figcaption>❤️Semoga nu ku aku rasa sama jeng nu ku kamu rasanya&#x1F631;</figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='p.jpg'>
+                    <figcaption>❤️Jujur Pas Foto Foto ini Aku ngerasa seneng Soalna Pertamakalina Ngerasa Difoto seseneng Ieu &#x1F604;</figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='j.jpg'>
+                    <figcaption>❤️Terimakasih Karena Telah mau Bersama sama</figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='k.jpg'>
+                    <figcaption>❤️Maaf selalu menjengkelkan dan Menjadi Hal Penyebab Kamu Emosi&#x1F605;</figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='l.jpg'>
+                    <figcaption>❤️&#x1F91E;</figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='m.jpg'>
+                    <figcaption>❤️ &#x1F918;</figcaption>
+                </figure>
+            </a>
+        </li>
+		<li>
+            <a href="">
+                <figure>
+                    <img src='n.jpg'>
+                    <figcaption>❤️&#x1F60E</figcaption>
+                </figure>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <figure>
+                    <img src='o.jpg'>
+                    <figcaption>❤️&#x1F61B; &#x1F61C;&#x1F92D;&#x270C;</figcaption>
+                </figure>
+            </a>
+        </li>
+		<a href="">
+			<figure>
+				<img src='p.jpg'>
+				<figcaption>❤️Terima kasih telah Hadir dan Semoga seterusnya &#x1F91E;</figcaption>
+			</figure>
+		</a>
+	</li>
+    </ul>
+</body>
+<footer>Created By Adin❤️</footer>
+</html>

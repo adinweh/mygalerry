@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Album Website</title>
+  <link rel="stylesheet" href="style1.css">
+ <!--css icon footer--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!---->
+</head>
+<style>
+  .social-icons {
+            
+            gap: 15px; /* icon */
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #333; /* Default color */
+            font-size: 24px; /* Icon size */
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #007bff; /* warna hover */
+        }
+        /* styles.css */
+body {
+    
+    background-color: #282c34;
+        font-family: 'Courier New', Courier, monospace;
+        justify-content: center;
+        margin: 0;
+        
+}
+
+.typing-container {
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30ch; /*NENTUIN LEBAR TULISAN*/
+    animation: blink 2s step-end infinite;
+    color: pink;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 30px;
+
+
+}
+
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+ul li a{
+  color: aquamarine;
+}
+
+
+
+</style>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Album</a></li>
+        <li><a href="#contact">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h1>Welcome to my album website</h1>
+      <div class="typing-container">
+       <span id="typing-text">
+    </span>
+    </div>
+    </section>
+    <section id="portfolio">
+      <h1>MY ALBUM &#x1F60E;</h1>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="1.jpeg" alt="image 1" class="image">
+          <h2><a href="1.html">&#128512;</a></h2>
+          <p></p>
+        </div>
+        <div class="portfolio-item">
+          <img src="b.jpg" alt="Image 2" class="image">
+          <h2><a href="2.html">&#x1F60D;</a></h2>
+          <p></p>
+        </div>
+        <div class="portfolio-item">
+          <img src="3.jpeg" alt="Image 3" class="image">
+          <h2><a href="3.html">&#128526;</a></h2>
+          <p></p>
+        </div>
+        <div class="portfolio-item">
+          <img src="kamu (1).jpeg" alt="Image 4" class="image">
+          <h2><a href="4.html">&#x1F61C;</a></h2>
+          <p></p>
+        </div>
+        <div class="portfolio-item">
+          <img src="I.jpeg" alt="Image 5" class="image">
+          <h2><a href="5.html">&#x1F631;</a></h2>
+          <p></p>
+        </div>
+        <div class="portfolio-item">
+          <img src="4.jpeg" alt="Image 6" class="image">
+          <h2><a href="6.html">&#x1F92A;</a></h2>
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2></h2>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/adin.disorder.1?locale=id_ID" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/adin_hasmadin/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:adinhasmadin058@example.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/adinweh" target="_blank" aria-label="YouTube">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+    </section>
+  </main>
+  <script src="javascrift.js"></script>
+  <footer>
+   <a href="https://github.com/adinweh"> Created By Adin❤️</a>
+  </footer>
+</body>
+</html>
